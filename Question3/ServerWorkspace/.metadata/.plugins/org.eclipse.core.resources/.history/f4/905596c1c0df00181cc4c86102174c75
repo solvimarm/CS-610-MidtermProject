@@ -1,0 +1,34 @@
+import java.rmi.RemoteException;
+import java.rmi.*;
+import java.rmi.server.*;
+
+public class VoteServerImpl extends UnicastRemoteObject implements VoteInterface {
+	public int yesVotes = 0;
+	public int noVotes = 0;
+	
+	protected VoteServerImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+		
+		
+	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;	
+
+	@Override
+	public String castVote(char vote) throws RemoteException{
+		// TODO Auto-generated method stub
+		if(vote == 'Y' || vote == 'y') {
+			yesVotes += 1;
+			return "Yes = " + yesVotes + "; No = " + noVotes;
+		}
+		else if (vote == 'N' || vote == 'n') {
+			noVotes+=1;
+			return "Yes = " + yesVotes + "; No = " + noVotes;
+		}
+		else return "You have not entered the vote statement correctly. Please use [Yes][No] only";
+	}
+
+}
