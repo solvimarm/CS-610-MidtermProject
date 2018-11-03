@@ -1,0 +1,33 @@
+import java.rmi.RemoteException;
+import java.rmi.*;
+import java.rmi.server.*;
+
+public class VoteServerImpl extends UnicastRemoteObject implements VoteInterface {
+	public int yesVotes = 0;
+	public int noVotes = 0;
+	
+	protected VoteServerImpl() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+		
+		
+	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;	
+
+	@Override
+	public String castVote(char vote) throws RemoteException{
+		// TODO Auto-generated method stub
+		if(vote == 'y') {
+			yesVotes += 1;
+			return "you have voted YES, yes count = " + yesVotes;
+		}
+		else {
+			noVotes+=1;
+			return "You have VOTED NO, no counts = " + noVotes;
+		}
+	}
+
+}

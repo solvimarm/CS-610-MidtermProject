@@ -1,0 +1,11 @@
+import java.rmi.RemoteException;
+
+public class VoteServerImpl implements VoteInterface {
+
+	@Override
+	public String castVote(char vote) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

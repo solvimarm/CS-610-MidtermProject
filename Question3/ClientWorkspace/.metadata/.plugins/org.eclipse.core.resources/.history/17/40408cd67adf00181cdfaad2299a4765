@@ -1,0 +1,25 @@
+import java.rmi.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class MyClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Scanner keyb = new Scanner(system.in);
+			int port = 1337;
+			String host = "localhost";
+			String registryUrl = "rmi://" + host + ":" + port + "/voting";
+			VoteInterface voteSystem = (VoteInterface)Naming.lookup(registryUrl);
+			System.out.println("Lookup completed");
+			System.out.println(voteSystem.castVote('y'));
+			System.out.println(voteSystem.castVote('n'));
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+
+	}
+
+}
