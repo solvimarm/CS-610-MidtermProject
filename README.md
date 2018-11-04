@@ -35,5 +35,5 @@ Run with command line (Given that JAVA_HOME is set):
 2. Start Apache
 3. Place Test.HTMLfile in your xmapp localhost folder
 4. Run AddCookiess.java 
-5. Run Main
+5. Run Main.java
 
