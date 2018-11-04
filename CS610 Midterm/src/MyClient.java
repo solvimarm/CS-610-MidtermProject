@@ -4,15 +4,11 @@ import java.io.*;
 import java.net.*;
 
 public class MyClient extends Applet {
-  //private int s;
+ 
   private String color;
   private String message;
   
- /* 
-  Color [] c = {
-		  Color.BLUE, Color.GREEN
-  };
-	*/
+
   
   public void init(){
     setSize(400, 400);
