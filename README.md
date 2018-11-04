@@ -31,4 +31,9 @@ Run with command line (Given that JAVA_HOME is set):
 
 **Question 4**
 
-Enter Text Here
+1. Create a folder called Temp1 not temp in your c drive
+2. Start Apache
+3. Place Test.HTMLfile in your xmapp localhost folder
+4. Run AddCookiess.java 
+5. Run Main
+
