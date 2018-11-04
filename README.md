@@ -30,8 +30,10 @@ Run with command line (Given that JAVA_HOME is set):
 
 
 **Question 4**
-
-1. Create a folder called Temp1 not temp in your c drive
+(Make Sure you have imported a Servelt from lib folder from Tomcat Folder)
+   This is the path on my system it my vary on yours
+   C:\xampp\tomcat\lib\servlet-api.jar
+1. Create a folder called Temp1 not temp in your c drive there is already a temp folder 
 2. Start Apache
 3. Place Test.HTMLfile in your xmapp localhost folder
 4. Run AddCookiess.java 
