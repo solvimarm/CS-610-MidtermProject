@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MyServer {
   public static void main(String[] args){
-    //Complete this method.
+
     ServerSocket serverSocket = null;
     Scanner keyboard = new Scanner(System.in);
     try {
