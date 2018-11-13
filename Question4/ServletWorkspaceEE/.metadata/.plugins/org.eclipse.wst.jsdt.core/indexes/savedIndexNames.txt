@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Solvi Mar Magnusson\School\Fall18\IntroToParallel&DistComp\Midterm\Question4\ServletWorkspaceEE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3724172994.index
+1164720731.index
+2076713703.index
+291236409.index
+2386807342.index
+245162911.index

@@ -1,0 +1,19 @@
+import java.io.*;
+import java.net.*;
+import java.util.Scanner;
+
+public class MyServer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ServerSocket serverSocket = null;
+		Scanner keyb = new Scanner(System.in);
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+
+}

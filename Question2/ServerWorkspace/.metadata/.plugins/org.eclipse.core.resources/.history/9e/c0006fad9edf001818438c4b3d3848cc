@@ -1,0 +1,33 @@
+import java.io.*;
+import java.net.*;
+import java.util.Scanner;
+
+public class MyServer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ServerSocket serverSocket = null;
+		Scanner keyb = new Scanner(System.in);
+		try {
+			serverSocket = new ServerSocket(1337);
+			System.out.println("waiting for client to connect!");
+			Socket clientSocket = serverSocket.accept();
+			System.out.print("Server is ready!/n");
+			System.out.print("Enter blue/green for a color: ");
+			String color = keyb.nextLine();
+			System.out.print("Enter a message: ");
+			String message = keyb.nextLine();
+			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(),true);
+			String outputMessage = String.format("%s;%s", color,message);
+			out.println(outputMessage);
+			out.close();
+			clientSocket.close();
+			serverSocket.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+
+}

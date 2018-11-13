@@ -1,0 +1,26 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.io.*;
+import java.net.*;
+
+@SuppressWarnings("deprecation")
+public class MyClient extends Applet{
+	private String message;
+	private String color;
+	
+	public void init() {
+		setSize(400,400);
+		try {
+			InetAddress host = InetAddress.getByName("localhost");
+			Socket clientSocket = new Socket(host,1337);
+			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+			System.out.println(in.readLine());
+			message = in.readLine();
+			in.close();
+			clientSocket.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

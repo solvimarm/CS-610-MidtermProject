@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Solvi Mar Magnusson\School\Fall18\IntroToParallel&DistComp\Midterm\Question2\ClientWorkspace\.metadata\.plugins\org.eclipse.jdt.core
+3996102163.index
+752118594.index

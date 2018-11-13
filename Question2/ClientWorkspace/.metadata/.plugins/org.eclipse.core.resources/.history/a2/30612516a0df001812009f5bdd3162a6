@@ -1,0 +1,42 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.io.*;
+import java.net.*;
+
+@SuppressWarnings("deprecation")
+public class MyClient extends Applet{
+	private String message;
+	private String color;
+	
+	public void init() {
+		setSize(400,400);
+		try {
+			InetAddress host = InetAddress.getByName("localhost");
+			Socket clientSocket = new Socket(host,1339);
+			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+			message = in.readLine();
+			System.out.println(message);
+			String[] split = message.split(";");
+			
+			color = split[0];
+			message = split[1];
+			if(color.matches("blue")) {
+				setBackground(Color.BLUE);
+			}
+			else if(color.matches("green")) {
+				setBackground(Color.GREEN);
+			}
+			else 
+				setBackground(Color.WHITE)l
+			in.close();
+			clientSocket.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void paint(Graphics page) {
+		
+		page.drawString(message,10,200);
+	}
+}

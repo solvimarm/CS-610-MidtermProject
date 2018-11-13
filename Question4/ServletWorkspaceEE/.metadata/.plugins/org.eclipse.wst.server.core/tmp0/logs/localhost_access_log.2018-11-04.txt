@@ -1,0 +1,4 @@
+127.0.0.1 - - [04/Nov/2018:13:56:49 -0500] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [04/Nov/2018:13:56:50 -0500] "GET /CookiesProject/Main.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2018:13:56:57 -0500] "GET /CookiesProject/Main?name=john&password=doe&newPassword=aa&reEnterPassword=aa&changePassword=Change+the+Password HTTP/1.1" 200 139
+0:0:0:0:0:0:0:1 - - [04/Nov/2018:13:57:31 -0500] "GET /CookiesProject/Main?name=john&password=aa&newPassword=Doe&reEnterPassword=Doe&changePassword=Change+the+Password HTTP/1.1" 200 130

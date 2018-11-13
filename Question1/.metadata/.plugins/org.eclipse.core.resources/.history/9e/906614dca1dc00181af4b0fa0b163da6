@@ -1,0 +1,10 @@
+
+public class MyThread extends Thread{
+	private int[] segment;
+	public MyThread(int[] segment) {
+		this.segment = segment;
+	}
+	public void run() {
+		
+	}
+}

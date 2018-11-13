@@ -1,0 +1,10 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.io.*;
+import java.net.*;
+
+public class MyClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InetAddress host = InetAddress.getByName("localhost");
